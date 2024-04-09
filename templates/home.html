@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IRIS FLOWER DETECTION</title>
+    <style>
+        body {
+            background-color: #f0f0f0; /* Light gray background */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center; /* Center align all text */
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #4CAF50; /* Green heading */
+            background-color: #fff; /* White background for heading */
+            padding: 10px;
+            border-radius: 5px;
+        }
+        form {
+            background-color: #fff; /* White background for form */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left; /* Left align form elements */
+        }
+        input[type="text"] {
+            width: calc(100% - 22px); /* Adjust width to account for padding and border */
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc; /* Light gray border */
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50; /* Green submit button */
+            color: #fff; /* White text */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>IRIS FLOWER DETECTION</h1>
+        
+        <form method="POST" action="{{url_for('home')}}">
+            <b>First value: <input type="text" name="a" placeholder="Enter 1"><br>
+            Second value: <input type="text" name="b" placeholder="Enter 2"><br>
+            Third value: <input type="text" name="c" placeholder="Enter 3"><br>
+            Fourth value: <input type="text" name="d" placeholder="Enter 4"><br><br></b>
+            <input type="submit" value="Predict">
+        </form>
+
+        <img src="static/flower1.jpg" alt="flower">
+    </div>
+</body>
+</html>
